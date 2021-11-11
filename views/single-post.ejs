@@ -1,0 +1,36 @@
+<%- include ('includes/head.ejs') %>
+  <script> function deletado() {
+      alert('Post excluído.')
+    }</script>
+
+  <a href='/edit/<%= post.id %>'>Editar Post</button>
+
+    <form class='delete' method="post" action='/delete'>
+      <button name='id' value='<%= post.id %>' onclick="deletado()">Remover Post</button>
+    </form>
+    <div class=" header-single-post">
+      <h1>
+        <%= post.title %>
+
+      </h1>
+      <div>
+        <span class='author'>
+          Autor: <%= post.author %>
+        </span>
+      </div>
+      <div>
+        <span class='post-date'>
+          Criado em: <%= post.createdAt.toLocaleDateString() %>
+        </span>
+      </div>
+    </div>
+    <div class='post-info'>
+      <h5>Descrição:</h5>
+      <p>
+        <%= post.description %>
+      </p>
+    </div>
+    <div class='post-text'>
+
+    </div>
+    <%- include('includes/footer.ejs') %>

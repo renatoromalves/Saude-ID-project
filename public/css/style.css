@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background: beige;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header {
+  display: flex;
+  height: 60px;
+  background-color: rgb(23, 38, 105);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header>div>a {
+  padding: 0 auto;
+  color: rgb(173, 186, 245);
+  margin: 10px;
+}
+
+.blog-post{
+  min-width: 200px;
+  min-height: 250px;
+  background:bisque;
+  box-shadow: 1.5px 1.5px 6px azure;
+  border-radius: 6px;
+  padding: 10px 15px;
+  transition: ease-in-out 3ms;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.blog-post:hover {
+  box-shadow: 2px 2px 26px azure;
+  transform:scale(1.03)
+}
+
+.search input {
+  border: 1px solid burlywood;
+  border-radius: 3px;
+  background: beige;
+  padding: 5px 8px;
+  margin-right: 20px;
+}
+
+.app-logo {
+  width: 100px;
+  height: auto;
+}
+
+.top-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center; 
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.top-container h1,
+.top-container img {
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid darkgoldenrod;
+  border-radius: 3px;
+}
+
+.submit {
+  margin-top: 15px;
+  background: beige;
+  color: black;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 40px;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer {
+  position:absolute;
+  width: 100%;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(23, 38, 105);
+  color: rgb(173, 186, 245);
+  text-align: center;
+  height: 60px;
+}
+
+
+.header-single-post, .post-text{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.header-single-post .post-date{
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.post-info{
+  max-width: 960px;
+  margin: 0 auto;
+  background:bisque;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+ }
+ 
+.post-info h4{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}

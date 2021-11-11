@@ -1,0 +1,37 @@
+<%- include ('./includes/head.ejs') %>
+
+  <div class="top-container">
+    <h1>Resultados da pesquisa por "<%= query%>"
+    </h1>
+    <img class='quadro' src="/images/quadro.png" />
+  </div>
+
+  <div class="container">
+    <% if (posts.length> 0) { %>
+      <% for (let post of posts) { %>
+        <a href="/posts/<%= post.id %>">
+          <div class="blog-post">
+            <h3>
+              <%= post.title %>
+            </h3>
+            <h4>
+              <%= post.author %>
+            </h4>
+            <p>
+              <%= post.description %>
+            </p>
+            <p>
+              <%= post.category %>
+            </p>
+          </div>
+        </a>
+        <% } } else { %>
+          <div class="blog-post">
+            <h3>Nenhum Resultado para "<%= query%>" encontrado</h3>
+
+          </div>
+          <% } %>
+  </div>
+
+
+  <%- include('./includes/footer.ejs') %>

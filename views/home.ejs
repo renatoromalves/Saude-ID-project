@@ -1,0 +1,36 @@
+<%- include ('./includes/head.ejs') %>
+
+  <div class="top-container">
+    <h1>Meu blog</h1>
+    <img src="/images/quadro.jpg" />
+  </div>
+
+  <div class="container">
+    <% if (posts.length> 0) { %>
+      <% for (let post of posts) { %>
+        <a href="/posts/<%= post.id %>">
+          <div class="blog-post">
+
+            <h3>
+              <%= post.title %>
+            </h3>
+            <p>
+              <strong>Autor: </strong>
+              <%= post.author %>
+            </p>
+            <p>
+              <strong>Categoria:</strong>
+              <%= post.category %>
+            </p>
+            <p>
+              <strong>Descrição:</strong>
+              <%= post.description %>
+            </p>
+          </div>
+        </a>
+        <% } } %>
+
+  </div>
+
+
+  <%- include('./includes/footer.ejs') %>
