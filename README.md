@@ -1,5 +1,11 @@
 Projeto realizado com os objetivos abaixo:
 
+Packages: 
+  - Sequelize
+  - Express
+  - Sqlite3
+  - EJS
+
 ## Desafio
 Para esse desafio pedimos uma API em Node.js para a criação de um blog. Esse blog deve conter posts, categorias atrelados ao post e autor do post.
 
